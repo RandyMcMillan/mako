@@ -15,13 +15,13 @@
 
 #include <base/config.h>
 
-#include <io/core.h>
+#include "core.h"
 
-#include <mako/net.h>
-#include <mako/netaddr.h>
-#include <mako/network.h>
-#include <mako/util.h>
-#include <mako/vector.h>
+#include "net.h"
+#include "netaddr.h"
+#include "network.h"
+#include "util.h"
+#include "vector.h"
 
 #include "../internal.h"
 

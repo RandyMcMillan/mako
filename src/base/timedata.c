@@ -8,7 +8,7 @@
 #include <stdint.h>
 #include <string.h>
 #include <base/timedata.h>
-#include <mako/util.h>
+#include "util.h"
 #include "../impl.h"
 #include "../internal.h"
 
