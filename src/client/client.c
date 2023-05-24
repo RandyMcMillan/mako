@@ -10,8 +10,8 @@
 #include <string.h>
 
 #include <client/client.h>
-#include <io/http.h>
-#include <mako/json.h>
+#include "http.h"
+#include "json.h"
 
 #include "../internal.h"
 

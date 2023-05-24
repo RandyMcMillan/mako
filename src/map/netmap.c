@@ -4,8 +4,8 @@
  * https://github.com/chjj/mako
  */
 
-#include <mako/map.h>
-#include <mako/netaddr.h>
+#include "map.h"
+#include "netaddr.h"
 #include "map.h"
 
 /*

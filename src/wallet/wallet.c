@@ -10,21 +10,21 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <mako/address.h>
-#include <mako/bip32.h>
-#include <mako/bip39.h>
-#include <mako/block.h>
-#include <mako/bloom.h>
-#include <mako/coins.h>
-#include <mako/map.h>
-#include <mako/network.h>
-#include <mako/policy.h>
-#include <mako/printf.h>
-#include <mako/script.h>
-#include <mako/select.h>
-#include <mako/tx.h>
-#include <mako/util.h>
-#include <mako/vector.h>
+#include "address.h"
+#include "bip32.h"
+#include "bip39.h"
+#include "block.h"
+#include "bloom.h"
+#include "coins.h"
+#include "map.h"
+#include "network.h"
+#include "policy.h"
+#include "printf.h"
+#include "script.h"
+#include "select.h"
+#include "tx.h"
+#include "util.h"
+#include "vector.h"
 
 #include "../bio.h"
 #include "../impl.h"

@@ -15,8 +15,8 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <string.h>
-#include <mako/crypto/hash.h>
-#include <mako/util.h>
+#include "hash.h"
+#include "util.h"
 #include "../bio.h"
 #include "../internal.h"
 

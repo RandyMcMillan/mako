@@ -82,11 +82,11 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
-#include <mako/crypto/drbg.h>
-#include <mako/crypto/ecc.h>
-#include <mako/crypto/hash.h>
-#include <mako/mpi.h>
-#include <mako/util.h>
+#include "drbg.h"
+#include "ecc.h"
+#include "hash.h"
+#include "mpi.h"
+#include "util.h"
 
 #include "asn1.h"
 #include "../internal.h"

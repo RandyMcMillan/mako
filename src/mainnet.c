@@ -6,7 +6,7 @@
 
 #include <stddef.h>
 #include <stdint.h>
-#include <mako/network.h>
+#include "network.h"
 #include "internal.h"
 
 static const char *mainnet_seeds[] = {

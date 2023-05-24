@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include <mako/encoding.h>
+#include "encoding.h"
 #include "internal.h"
 
 /*

@@ -8,8 +8,8 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-#include <mako/netaddr.h>
-#include <mako/util.h>
+#include "netaddr.h"
+#include "util.h"
 #include "impl.h"
 #include "internal.h"
 

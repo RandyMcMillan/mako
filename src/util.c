@@ -11,8 +11,8 @@
 #ifdef _WIN32
 #  include <windows.h> /* SecureZeroMemory */
 #endif
-#include <mako/encoding.h>
-#include <mako/util.h>
+#include "encoding.h"
+#include "util.h"
 #include "internal.h"
 
 /*

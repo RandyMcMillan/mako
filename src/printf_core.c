@@ -11,8 +11,8 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
-#include <mako/netaddr.h>
-#include <mako/printf.h>
+#include "netaddr.h"
+#include "printf.h"
 #include "printf_core.h"
 
 /*

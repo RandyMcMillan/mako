@@ -4,8 +4,8 @@
  * https://github.com/chjj/mako
  */
 
-#include <mako/map.h>
 #include "map.h"
+#include "../../include/wallet/types.h"
 
 /*
  * Long Integer Map

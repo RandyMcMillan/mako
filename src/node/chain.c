@@ -9,29 +9,29 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <io/core.h>
-#include <io/workers.h>
+#include "core.h"
+#include "workers.h"
 
-#include <node/chain.h>
-#include <node/chaindb.h>
-#include <base/logger.h>
-#include <base/timedata.h>
+#include "chain.h"
+#include "chaindb.h"
+#include "logger.h"
+#include "timedata.h"
 
-#include <mako/block.h>
-#include <mako/coins.h>
-#include <mako/consensus.h>
-#include <mako/crypto/hash.h>
-#include <mako/entry.h>
-#include <mako/header.h>
-#include <mako/list.h>
-#include <mako/map.h>
-#include <mako/mpi.h>
-#include <mako/netmsg.h>
-#include <mako/network.h>
-#include <mako/script.h>
-#include <mako/tx.h>
-#include <mako/util.h>
-#include <mako/vector.h>
+#include "block.h"
+#include "coins.h"
+#include "consensus.h"
+#include "hash.h"
+#include "entry.h"
+#include "header.h"
+#include "list.h"
+#include "map.h"
+#include "mpi.h"
+#include "netmsg.h"
+#include "network.h"
+#include "script.h"
+#include "tx.h"
+#include "util.h"
+#include "vector.h"
 
 #include "../impl.h"
 #include "../internal.h"

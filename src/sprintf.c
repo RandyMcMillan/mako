@@ -8,7 +8,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
-#include <mako/printf.h>
+#include "printf.h"
 #include "printf_core.h"
 
 /*

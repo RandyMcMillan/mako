@@ -7,11 +7,11 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include <mako/bip32.h>
-#include <mako/bip39.h>
-#include <mako/crypto/hash.h>
-#include <mako/crypto/rand.h>
-#include <mako/util.h>
+#include "bip32.h"
+#include "bip39.h"
+#include "hash.h"
+#include "rand.h"
+#include "util.h"
 #include "impl.h"
 #include "internal.h"
 #include "words.h"

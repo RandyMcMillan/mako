@@ -10,12 +10,12 @@
 #include <stddef.h>
 #include <stdint.h>
 
-#include <lcdb.h>
+#include "../../deps/lcdb/include/lcdb.h"
 
-#include <mako/impl.h>
-#include <mako/types.h>
+#include "impl.h"
+#include "types.h"
 
-#include <wallet/types.h>
+#include "../wallet/types.h"
 
 /*
  * Types

@@ -10,7 +10,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
-#include <mako/util.h>
+#include "util.h"
 #include "../internal.h"
 
 #define MAP_STATIC BTC_UNUSED static

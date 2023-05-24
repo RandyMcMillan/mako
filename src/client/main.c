@@ -9,13 +9,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <client/client.h>
+#include "client.h"
 
-#include <io/core.h>
+#include "core.h"
 
-#include <base/config.h>
-#include <mako/json.h>
-#include <mako/util.h>
+#include "config.h"
+#include "json.h"
+#include "util.h"
 
 #include "../internal.h"
 

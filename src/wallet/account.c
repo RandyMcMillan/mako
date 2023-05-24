@@ -8,11 +8,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <mako/address.h>
-#include <mako/bip32.h>
-#include <mako/bloom.h>
-#include <mako/script.h>
-#include <mako/util.h>
+#include "address.h"
+#include "bip32.h"
+#include "bloom.h"
+#include "script.h"
+#include "util.h"
 
 #include "../impl.h"
 #include "../internal.h"

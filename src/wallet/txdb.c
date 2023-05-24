@@ -8,15 +8,15 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <mako/address.h>
-#include <mako/bip32.h>
-#include <mako/bloom.h>
-#include <mako/coins.h>
-#include <mako/map.h>
-#include <mako/script.h>
-#include <mako/tx.h>
-#include <mako/util.h>
-#include <mako/vector.h>
+#include "address.h"
+#include "bip32.h"
+#include "bloom.h"
+#include "coins.h"
+#include "map.h"
+#include "script.h"
+#include "tx.h"
+#include "util.h"
+#include "vector.h"
 
 #include "../internal.h"
 

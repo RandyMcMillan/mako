@@ -8,12 +8,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <mako/bip32.h>
-#include <mako/coins.h>
-#include <mako/entry.h>
-#include <mako/map.h>
-#include <mako/network.h>
-#include <mako/util.h>
+#include "bip32.h"
+#include "coins.h"
+#include "entry.h"
+#include "map.h"
+#include "network.h"
+#include "util.h"
 
 #include "../impl.h"
 #include "../internal.h"

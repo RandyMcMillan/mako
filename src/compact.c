@@ -6,8 +6,8 @@
 
 #include <stdlib.h>
 #include <stdint.h>
-#include <mako/mpi.h>
-#include <mako/util.h>
+#include "mpi.h"
+#include "util.h"
 #include "internal.h"
 
 /*

@@ -6,7 +6,7 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <mako/vector.h>
+#include "vector.h"
 #include "impl.h"
 #include "internal.h"
 

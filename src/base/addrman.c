@@ -11,21 +11,21 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <io/core.h>
+#include "core.h"
 
-#include <base/addrman.h>
-#include <base/logger.h>
-#include <base/timedata.h>
+#include "addrman.h"
+#include "logger.h"
+#include "timedata.h"
 
-#include <mako/crypto/hash.h>
-#include <mako/crypto/rand.h>
-#include <mako/list.h>
-#include <mako/map.h>
-#include <mako/net.h>
-#include <mako/netaddr.h>
-#include <mako/network.h>
-#include <mako/util.h>
-#include <mako/vector.h>
+#include "hash.h"
+#include "rand.h"
+#include "list.h"
+#include "map.h"
+#include "net.h"
+#include "netaddr.h"
+#include "network.h"
+#include "util.h"
+#include "vector.h"
 
 #include "../bio.h"
 #include "../impl.h"

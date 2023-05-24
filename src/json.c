@@ -8,19 +8,19 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <mako/address.h>
-#include <mako/block.h>
-#include <mako/coins.h>
-#include <mako/consensus.h>
-#include <mako/encoding.h>
-#include <mako/entry.h>
-#include <mako/header.h>
-#include <mako/json.h>
-#include <mako/netaddr.h>
-#include <mako/network.h>
-#include <mako/script.h>
-#include <mako/tx.h>
-#include <mako/util.h>
+#include "address.h"
+#include "block.h"
+#include "coins.h"
+#include "consensus.h"
+#include "encoding.h"
+#include "entry.h"
+#include "header.h"
+#include "json.h"
+#include "netaddr.h"
+#include "network.h"
+#include "script.h"
+#include "tx.h"
+#include "util.h"
 
 #include "internal.h"
 

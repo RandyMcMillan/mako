@@ -13,12 +13,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <lcdb.h>
+#include "../../deps/lcdb/include/lcdb.h"
 
-#include <mako/address.h>
-#include <mako/coins.h>
-#include <mako/tx.h>
-#include <mako/util.h>
+#include "address.h"
+#include "coins.h"
+#include "tx.h"
+#include "util.h"
 
 #include "../bio.h"
 #include "../impl.h"

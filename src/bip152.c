@@ -8,18 +8,18 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <mako/array.h>
-#include <mako/bip152.h>
-#include <mako/block.h>
-#include <mako/consensus.h>
-#include <mako/crypto/hash.h>
-#include <mako/crypto/rand.h>
-#include <mako/crypto/siphash.h>
-#include <mako/header.h>
-#include <mako/map.h>
-#include <mako/tx.h>
-#include <mako/util.h>
-#include <mako/vector.h>
+#include "array.h"
+#include "bip152.h"
+#include "block.h"
+#include "consensus.h"
+#include "hash.h"
+#include "rand.h"
+#include "siphash.h"
+#include "header.h"
+#include "map.h"
+#include "tx.h"
+#include "util.h"
+#include "vector.h"
 
 #include "impl.h"
 #include "internal.h"

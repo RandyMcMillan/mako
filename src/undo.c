@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include <mako/coins.h>
+#include "coins.h"
 #include "impl.h"
 #include "internal.h"
 

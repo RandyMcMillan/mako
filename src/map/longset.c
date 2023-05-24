@@ -4,7 +4,7 @@
  * https://github.com/chjj/mako
  */
 
-#include <mako/map.h>
+#include "map.h"
 #include "map.h"
 
 /*

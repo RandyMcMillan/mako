@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include <mako/crypto/hash.h>
+#include "hash.h"
 #include "internal.h"
 
 /*

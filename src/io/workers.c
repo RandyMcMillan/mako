@@ -9,8 +9,8 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <io/core.h>
-#include <io/workers.h>
+#include "core.h"
+#include "workers.h"
 
 /*
  * Helpers

@@ -9,46 +9,46 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <io/core.h>
-#include <io/http.h>
-#include <io/loop.h>
+#include "core.h"
+#include "http.h"
+#include "loop.h"
 
-#include <base/addrman.h>
-#include <node/chain.h>
-#include <base/logger.h>
-#include <node/mempool.h>
-#include <node/miner.h>
-#include <node/node.h>
-#include <node/pool.h>
-#include <node/rpc.h>
-#include <base/timedata.h>
+#include "addrman.h"
+#include "chain.h"
+#include "logger.h"
+#include "mempool.h"
+#include "miner.h"
+#include "node.h"
+#include "pool.h"
+#include "rpc.h"
+#include "timedata.h"
 
-#include <mako/crypto/ecc.h>
-#include <mako/crypto/hash.h>
+#include "ecc.h"
+#include "hash.h"
 
-#include <mako/address.h>
-#include <mako/bip32.h>
-#include <mako/bip39.h>
-#include <mako/block.h>
-#include <mako/coins.h>
-#include <mako/consensus.h>
-#include <mako/crypto/hash.h>
-#include <mako/encoding.h>
-#include <mako/entry.h>
-#include <mako/header.h>
-#include <mako/json.h>
-#include <mako/map.h>
-#include <mako/net.h>
-#include <mako/netaddr.h>
-#include <mako/netmsg.h>
-#include <mako/network.h>
-#include <mako/script.h>
-#include <mako/tx.h>
-#include <mako/util.h>
-#include <mako/vector.h>
+#include "address.h"
+#include "bip32.h"
+#include "bip39.h"
+#include "block.h"
+#include "coins.h"
+#include "consensus.h"
+#include "hash.h"
+#include "encoding.h"
+#include "entry.h"
+#include "header.h"
+#include "json.h"
+#include "map.h"
+#include "net.h"
+#include "netaddr.h"
+#include "netmsg.h"
+#include "network.h"
+#include "script.h"
+#include "tx.h"
+#include "util.h"
+#include "vector.h"
 
-#include <wallet/iterator.h>
-#include <wallet/wallet.h>
+#include "iterator.h"
+#include "wallet.h"
 
 #include "../internal.h"
 

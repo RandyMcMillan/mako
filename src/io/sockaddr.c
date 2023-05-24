@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <io/core.h>
+#include "core.h"
 
 #ifdef _WIN32
 #  include <winsock2.h>

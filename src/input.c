@@ -7,9 +7,9 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include <mako/script.h>
-#include <mako/tx.h>
-#include <mako/crypto/hash.h>
+#include "script.h"
+#include "tx.h"
+#include "hash.h"
 #include "impl.h"
 #include "internal.h"
 

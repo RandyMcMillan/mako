@@ -7,7 +7,7 @@
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdio.h>
-#include <mako/printf.h>
+#include "printf.h"
 #include "printf_core.h"
 
 /*

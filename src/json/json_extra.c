@@ -7,7 +7,7 @@
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
-#include <mako/json.h>
+#include "json.h>
 
 /*
  * JSON Extras

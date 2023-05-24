@@ -19,7 +19,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <mako/crypto/siphash.h>
+#include "siphash.h"
 
 #include "../bio.h"
 #include "../internal.h"
