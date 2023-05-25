@@ -22,6 +22,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXContainerItemProxy section */
+		4BB3E2D62A1F027E009B48D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BECF7382A1D63A3008150FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B190CB12A1DB1A700A9C27F;
+			remoteInfo = makod;
+		};
 		4BB97C422A1EFD3D0084CCE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4BECF7382A1D63A3008150FD /* Project object */;
@@ -252,10 +259,10 @@
 		4B19087D2A1D820500A9C27F /* timedata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timedata.h; sourceTree = "<group>"; };
 		4B19087E2A1D820500A9C27F /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
 		4B1908942A1D82CD00A9C27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B190CB22A1DB1A700A9C27F /* makod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = makod; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B190CB22A1DB1A700A9C27F /* makod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = makod; path = ../../../../../../../../../Shared/mako/makod; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB97C2A2A1EFC110084CCE1 /* makod.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = makod.entitlements; sourceTree = "<group>"; };
 		4BB97C2B2A1EFC110084CCE1 /* mako.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = mako.entitlements; sourceTree = "<group>"; };
-		4BECF7402A1D63A4008150FD /* mako */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mako; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BECF7402A1D63A4008150FD /* mako */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = mako; path = ../../../../../../../../../Shared/mako/mako; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -726,6 +733,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4BB3E2D72A1F027E009B48D2 /* PBXTargetDependency */,
 			);
 			name = mako;
 			productName = mako;
@@ -851,6 +859,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4BB3E2D72A1F027E009B48D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B190CB12A1DB1A700A9C27F /* makod */;
+			targetProxy = 4BB3E2D62A1F027E009B48D2 /* PBXContainerItemProxy */;
+		};
 		4BB97C432A1EFD3D0084CCE1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4B18FFAA2A1EF2FA00A16EDD /* autogen-configure */;
