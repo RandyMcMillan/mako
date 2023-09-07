@@ -10,8 +10,8 @@
 #include "internal.h"
 
 static const char *signet_seeds[] = {
-  "seed.signet.bitcoin.sprovoost.nl.",
-  "178.128.221.177"
+  "104.131.10.218:38333",
+  "78.99.116.68:12346"
 };
 
 static const btc_checkpoint_t signet_checkpoints[] = {
