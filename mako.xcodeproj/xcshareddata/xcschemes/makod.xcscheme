@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BECF73F2A1D63A3008150FD"
-               BuildableName = "mako"
-               BlueprintName = "mako"
+               BlueprintIdentifier = "4B190CB12A1DB1A700A9C27F"
+               BuildableName = "makod"
+               BlueprintName = "makod"
                ReferencedContainer = "container:mako.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,10 +32,9 @@
    </TestAction>
    <LaunchAction
       buildConfiguration = "Release"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      customLLDBInitFile = "/Users/Shared/mako"
-      launchStyle = "1"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
+      launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
@@ -45,26 +44,26 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BECF73F2A1D63A3008150FD"
-            BuildableName = "mako"
-            BlueprintName = "mako"
+            BlueprintIdentifier = "4B190CB12A1DB1A700A9C27F"
+            BuildableName = "makod"
+            BlueprintName = "makod"
             ReferencedContainer = "container:mako.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      savedToolIdentifier = ""
+      savedToolIdentifier = "Activity Monitor"
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BECF73F2A1D63A3008150FD"
-            BuildableName = "mako"
-            BlueprintName = "mako"
+            BlueprintIdentifier = "4B190CB12A1DB1A700A9C27F"
+            BuildableName = "makod"
+            BlueprintName = "makod"
             ReferencedContainer = "container:mako.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
