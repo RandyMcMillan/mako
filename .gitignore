@@ -74,6 +74,9 @@ zig-cache/
 zig-out/
 
 **.DS_Store
-mako.xcodeproj/project.xcworkspace/xcuserdata/
-mako.xcodeproj/xcuserdata/
-mako.xcworkspace/xcuserdata/
+xcode/CMakeScripts/
+xcode/build/
+xcode/deps/
+xcode/install_manifest.txt
+xcode/mako.xcodeproj/project.xcworkspace/
+xcode/mako.xcodeproj/xcuserdata/
