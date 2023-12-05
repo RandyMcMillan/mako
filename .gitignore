@@ -72,3 +72,11 @@ x64/
 x86_64-w64-mingw32/
 zig-cache/
 zig-out/
+
+**.DS_Store
+xcode/CMakeScripts/
+xcode/build/
+xcode/deps/
+xcode/install_manifest.txt
+xcode/mako.xcodeproj/project.xcworkspace/
+xcode/mako.xcodeproj/xcuserdata/
