@@ -17,6 +17,5 @@ xcode-release:release
 	@cmake -D BUILD_RELEASE=1 -G Xcode -S . -B xcode
 	cd xcode && xcodebuild -configuration Release -scheme ALL_BUILD -arch x86_64 -arch arm64
 xcode-release-install:
-	#cd xcode && xcodebuild -configuration Release -scheme install
 	cd xcode && xcodebuild -configuration Release -scheme install -arch arm64 -arch x86_64
 -include Makefile
