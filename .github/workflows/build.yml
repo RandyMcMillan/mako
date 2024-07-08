@@ -93,8 +93,8 @@ jobs:
 
       - run: V=1 make
 
-      - run: V=1 sudo make xcode xcode-release || true
-        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && matrix.os == 'macos-latest'
+      - run: V=1 sudo make xcode xcode-release xcode-release-install || true
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
 
       - name: Save rustup
         id: cache-rustup-save
