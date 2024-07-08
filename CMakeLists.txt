@@ -95,13 +95,33 @@ if(MAKO_GLIBC)
   set(CMAKE_C_STANDARD 90)
   set(CMAKE_C_EXTENSIONS OFF)
   set(CMAKE_C_STANDARD_REQUIRED OFF)
-  list(APPEND mako_defines _GNU_SOURCE)
 endif()
 
 set(CMAKE_C_VISIBILITY_PRESET hidden)
 
 if(APPLE)
   set(CMAKE_OSX_DEPLOYMENT_TARGET 10.7)
+  set(MAC_OS_X_VERSION_MIN_ALLOWED 100700)
+endif()
+
+#
+# Feature Test Macros
+#
+
+if(WIN32)
+  list(APPEND mako_defines _WIN32_WINNT=0x501)
+endif()
+
+if(MAKO_GLIBC)
+  list(APPEND mako_defines _GNU_SOURCE)
+endif()
+
+if(CMAKE_SYSTEM_NAME STREQUAL "SunOS")
+  list(APPEND mako_defines _TS_ERRNO)
+endif()
+
+if(CMAKE_SYSTEM_NAME STREQUAL "AIX")
+  list(APPEND mako_defines _THREAD_SAFE_ERRNO)
 endif()
 
 #
@@ -417,8 +437,7 @@ if(MSVC)
   append_c_compiler_flag(mako_cflags /wd4146  # negation of unsigned integer
                                      /wd4244  # implicit integer demotion
                                      /wd4267  # implicit size_t demotion
-                                     /wd4334  # implicit 32->64 bit shift
-                                     /wd4996) # unsafe/deprecated functions
+                                     /wd4334) # implicit 32->64 bit shift
 elseif(BORLAND)
 # Todo.
 elseif(CMAKE_C_COMPILER_ID MATCHES "Watcom$")
@@ -450,8 +469,8 @@ if(MINGW)
   list(APPEND mako_ldflags -static-libgcc)
   # Much compatibility.
   if(MAKO_PORTABLE AND MINGW_ARCH STREQUAL "i686")
-    list(APPEND mako_cflags -march=i586 -mtune=i686)
-    list(APPEND mako_ldflags -march=i586 -mtune=i686)
+    list(APPEND mako_cflags -march=i486 -mtune=i686)
+    list(APPEND mako_ldflags -march=i486 -mtune=i686)
   endif()
 endif()
 
@@ -588,7 +607,7 @@ function(mako_build_full)
   # Install Targets
   #
 
-  if(UNIX)
+  if(UNIX OR APPLE)
     string(REPLACE ";" " -l" PKGCONF_LIBS "-l${mako_libs}")
 
     configure_file(libmako-cmake.pc.in libmako.pc @ONLY)
@@ -601,6 +620,34 @@ function(mako_build_full)
     install(FILES ${PROJECT_BINARY_DIR}/libmako.pc
             DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
     install(TARGETS mako_static ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
+
+    if(APPLE)
+        install(TARGETS mako
+            CONFIGURATIONS Debug
+            RUNTIME DESTINATION ${CMAKE_SOURCE_DIR}/CMAKE_BUILD_TYPE)
+        install(TARGETS mako
+            CONFIGURATIONS Release
+            RUNTIME DESTINATION /usr/local/bin)
+        install(TARGETS mako
+            CONFIGURATIONS Release
+            RUNTIME DESTINATION ${CMAKE_SOURCE_DIR}/CMAKE_BUILD_TYPE)
+    endif()
+    if(APPLE)
+        install(TARGETS mako
+            CONFIGURATIONS Debug
+            RUNTIME DESTINATION ${CMAKE_SOURCE_DIR}/CMAKE_BUILD_TYPE)
+        install(TARGETS mako
+            CONFIGURATIONS Release
+            RUNTIME DESTINATION ${CMAKE_SOURCE_DIR}/CMAKE_BUILD_TYPE)
+    endif()
+    if(APPLE)
+        install(TARGETS mako
+            CONFIGURATIONS Debug
+            RUNTIME DESTINATION ${CMAKE_SOURCE_DIR}/CMAKE_BUILD_TYPE)
+        install(TARGETS mako
+            CONFIGURATIONS Release
+            RUNTIME DESTINATION /usr/local/bin)
+    endif()
 
     if(MAKO_SHARED)
       install(TARGETS mako_shared
@@ -811,12 +858,15 @@ endfunction()
 #
 
 function(mako_build_summary)
-  set(build_type "")
+    set(CMAKE_BUILD_TYPE Debug)
+    option(BUILD_RELEASE "BUILD_RELEASE" OFF)
+    if(BUILD_RELEASE)
+        set(CMAKE_BUILD_TYPE Release)
+    endif()
 
   if(DEFINED CMAKE_BUILD_TYPE AND CMAKE_BUILD_TYPE)
     string(TOUPPER "${CMAKE_BUILD_TYPE}" build_type)
   endif()
-
   message(STATUS "Build Options:
 
    BUILD_TYPE:     ${CMAKE_BUILD_TYPE}
@@ -844,4 +894,20 @@ if(NOT PROJECT_NAME STREQUAL CMAKE_PROJECT_NAME)
 else()
   mako_build_full()
   mako_build_summary()
+endif()
+
+if(DEFINED CMAKE_BUILD_TYPE AND CMAKE_BUILD_TYPE)
+
+    if(APPLE)
+    install(DIRECTORY DESTINATION ${directory})
+        install(TARGETS mako
+            CONFIGURATIONS Debug
+            RUNTIME DESTINATION ${CMAKE_SOURCE_DIR}/CMAKE_BUILD_TYPE)
+        install(TARGETS mako
+            CONFIGURATIONS Release
+            RUNTIME DESTINATION /usr/local/bin)
+        install(TARGETS mako
+            CONFIGURATIONS Release
+            RUNTIME DESTINATION ${CMAKE_SOURCE_DIR}/CMAKE_BUILD_TYPE)
+    endif()
 endif()
