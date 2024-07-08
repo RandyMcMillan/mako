@@ -92,9 +92,7 @@ jobs:
       - run: mkdir -p ~/bin
 
       - run: V=1 make
-
-      - run: V=1 sudo make xcode xcode-release xcode-release-install || true
-        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+      - run: V=1 make xcode xcode-release xcode-release-install || true
 
       - name: Save rustup
         id: cache-rustup-save
