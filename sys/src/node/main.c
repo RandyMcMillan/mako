@@ -29,6 +29,7 @@
 
 static const char *node_args[] = {
   "-?",
+  "-h",
   "-bantime=",
   "-bind=",
   "-blocksonly=",
@@ -65,6 +66,7 @@ static const char *node_args[] = {
   "-testnet",
   "-upnp=",
   "-version"
+  "--help"
 };
 
 /*

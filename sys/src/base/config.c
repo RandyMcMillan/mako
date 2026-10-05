@@ -836,7 +836,9 @@ conf_parse_args(btc_conf_t *conf, int argc, char **argv, int allow_params) {
       continue;
     }
 
-    if (strcmp(arg, "-?") == 0) {
+    if (strcmp(arg, "-?") == 0
+        || strcmp(arg, "-h") == 0
+        || strcmp(arg, "--help") == 0) {
       conf->help = 1;
       continue;
     }

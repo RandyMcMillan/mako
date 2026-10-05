@@ -35,6 +35,7 @@ static const json_serialize_opts json_options = {
 
 static const char *rpc_args[] = {
   "-?",
+  "-h",
   "-chain=",
   "-conf=",
   "-datadir=",
@@ -43,7 +44,8 @@ static const char *rpc_args[] = {
   "-rpcport=",
   "-rpcuser=",
   "-testnet",
-  "-version"
+  "-version",
+  "--help"
 };
 
 /*
