@@ -38,7 +38,8 @@ $ make
 ```
 
 The above will produce two binaries: `mako and makod`. The arguments mimic
-`bitcoin-cli` and `bitcoind` respectively.
+`bitcoin-cli` and `bitcoind` respectively, and both binaries accept `-h` and
+`--help` for usage output.
 
 ## Background
 

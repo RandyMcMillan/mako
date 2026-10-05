@@ -1,0 +1,1260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1B6173242395E4FC5BE91492 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC14D89A17204EE1A2AD7A7D /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				ADDEC60185A4439DB3FCC7AB /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		3EE4D80A8383EC3C490DDFC9 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DA7A28C17B1A4EFDB415A97E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				0F6BFEC2C2547762AF25D1ED /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		4FC4B168B5D689D1D1D87E75 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EED48D2C817E450AB70C7446 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		A94D14074F9B814AB75BC388 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8E8B8A5B2AEE40C88F78D098 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				15AEEAD4DA6CE0B4D6752141 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				F7AF06A4C4E14F31B8D22D25 /* PBXTargetDependency */,
+				D674DC485C4044A0AA17A8FF /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		017542A2FE6740149411B3EC /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table.c */ = {isa = PBXBuildFile; fileRef = 24D78AEC9AEB43408F9F2AEF /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table.c */; };
+		04EBF12A582F442BA9E710C3 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_iter.c */ = {isa = PBXBuildFile; fileRef = 0723BAFBB9714F5383A57D55 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_iter.c */; };
+		09BF43538DBB40FEA1524A8C /* /Users/Shared/github/mako/sys/deps/lcdb/src/builder.c */ = {isa = PBXBuildFile; fileRef = 0C244E3A907A485D9792E3AC /* /Users/Shared/github/mako/sys/deps/lcdb/src/builder.c */; };
+		10152029DBA242D1B41B280D /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block.c */ = {isa = PBXBuildFile; fileRef = F1A2D2170C9642AD8FF480F7 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block.c */; };
+		11F8DF6A59814AEA9ED8EE50 /* /Users/Shared/github/mako/sys/deps/lcdb/src/write_batch.c */ = {isa = PBXBuildFile; fileRef = 3BED3AC903C44C38BEA520AA /* /Users/Shared/github/mako/sys/deps/lcdb/src/write_batch.c */; };
+		1D3B63F1D87C4B6FA846B050 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/bloom.c */ = {isa = PBXBuildFile; fileRef = EF428B8A1AED47ED97F65113 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/bloom.c */; };
+		1F03934E3A35495DB4CF93DA /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/arena.c */ = {isa = PBXBuildFile; fileRef = D44EA23F1167427AB64DC96D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/arena.c */; };
+		1F9C1262B64F4D9893E671C8 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/iterator.c */ = {isa = PBXBuildFile; fileRef = 7906A6FD15494C38B8881F92 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/iterator.c */; };
+		21144FA76C0A4171A9F609FF /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_set.c */ = {isa = PBXBuildFile; fileRef = A85FAAB8B3B643FC890CA991 /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_set.c */; };
+		24B5E3A22E72469CA3CD4B32 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/port.c */ = {isa = PBXBuildFile; fileRef = FF90AF252720466EA76DA6AF /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/port.c */; };
+		2708EABB878945419E7A9044 /* /Users/Shared/github/mako/sys/deps/lcdb/src/dumpfile.c */ = {isa = PBXBuildFile; fileRef = AB27D24634AE43CCA34B29B1 /* /Users/Shared/github/mako/sys/deps/lcdb/src/dumpfile.c */; };
+		2C8F250D2FF7494AAC040159 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/rbt.c */ = {isa = PBXBuildFile; fileRef = 793AF473A3074F82A3381327 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/rbt.c */; };
+		2EEC0A219BAC4CAAA87F8E2A /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/vector.c */ = {isa = PBXBuildFile; fileRef = 1DB54ED9500E4BF1AC2F44B1 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/vector.c */; };
+		3589729871704BEBBF369C99 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table_cache.c */ = {isa = PBXBuildFile; fileRef = 74DC76F3ECB6417A858C008B /* /Users/Shared/github/mako/sys/deps/lcdb/src/table_cache.c */; };
+		3EDA2ECECE514506B8415302 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/comparator.c */ = {isa = PBXBuildFile; fileRef = 85B8AC16FFFA44D28DAE9198 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/comparator.c */; };
+		49B1EFD7864A4BF5B37BB7D8 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/options.c */ = {isa = PBXBuildFile; fileRef = 369E9CB277C14D3A82DCF8A5 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/options.c */; };
+		4DB9941DA8E4493A88C36535 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/merger.c */ = {isa = PBXBuildFile; fileRef = 7DEFBA9CA59D406AA7E94D11 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/merger.c */; };
+		5C870CB9C6E846C18287A717 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/strutil.c */ = {isa = PBXBuildFile; fileRef = B96992B8FB004DBCB4EB611F /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/strutil.c */; };
+		6C45861FBA534D988267B031 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/hash.c */ = {isa = PBXBuildFile; fileRef = 7D1AAC172A4B4BD5843AB238 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/hash.c */; };
+		6DF900341FA145FEB0364155 /* /Users/Shared/github/mako/sys/deps/lcdb/src/memtable.c */ = {isa = PBXBuildFile; fileRef = CD599CF6056F48AB86A31442 /* /Users/Shared/github/mako/sys/deps/lcdb/src/memtable.c */; };
+		7A18DCAF9C8F4234BB71929F /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/buffer.c */ = {isa = PBXBuildFile; fileRef = 9CCB94F6E9894BC5A3CC447D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/buffer.c */; };
+		819CD2433DA2445786C1356D /* /Users/Shared/github/mako/sys/deps/lcdb/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 079EA1549AC044058093D759 /* /Users/Shared/github/mako/sys/deps/lcdb/CMakeLists.txt */; };
+		8A3DF1CF57F3429392B25881 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/thread_pool.c */ = {isa = PBXBuildFile; fileRef = 7A487EF4441C437ABDBBEDF2 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/thread_pool.c */; };
+		9469E70175564A8DB643B753 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/two_level_iterator.c */ = {isa = PBXBuildFile; fileRef = 91B704FF101A4AC9A26F0543 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/two_level_iterator.c */; };
+		9513B0330AC04B89AED98D5D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/array.c */ = {isa = PBXBuildFile; fileRef = 7C5F46CC80D0424C84B994FB /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/array.c */; };
+		97E4999C0EB24D33811E1A5D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/logger.c */ = {isa = PBXBuildFile; fileRef = 78D174FBA9CB4F638DB149A7 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/logger.c */; };
+		9925133AC6B142E88E63A183 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/random.c */ = {isa = PBXBuildFile; fileRef = 732CAA7407934986A2697532 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/random.c */; };
+		A25B515F994D4218ACD0F052 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/status.c */ = {isa = PBXBuildFile; fileRef = 04692AF5DDC94AE2B3428DAF /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/status.c */; };
+		A7DFA2E80ED344B38180B232 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_reader.c */ = {isa = PBXBuildFile; fileRef = 58049D7809C044938AA31D60 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_reader.c */; };
+		A88FFCA83A3D40A58F73B179 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/cache.c */ = {isa = PBXBuildFile; fileRef = A1D80798C40C4B1B948248BA /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/cache.c */; };
+		ABF9F15025264D6789A24B11 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/atomic.c */ = {isa = PBXBuildFile; fileRef = DE93D481A0034BECA9029CD9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/atomic.c */; };
+		AECC649857FE491AB09E03EC /* /Users/Shared/github/mako/sys/deps/lcdb/src/repair.c */ = {isa = PBXBuildFile; fileRef = 1E12B52DC68447C08859D906 /* /Users/Shared/github/mako/sys/deps/lcdb/src/repair.c */; };
+		AFC01CA94D804E26A0672311 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/slice.c */ = {isa = PBXBuildFile; fileRef = B08A4C049BE34F03969D5DFE /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/slice.c */; };
+		BBCE22FAC6F143FCAC50936D /* /Users/Shared/github/mako/sys/deps/lcdb/src/dbformat.c */ = {isa = PBXBuildFile; fileRef = 1D242926F732426686A4EC53 /* /Users/Shared/github/mako/sys/deps/lcdb/src/dbformat.c */; };
+		C33C1520D452420980BE0387 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/filter_block.c */ = {isa = PBXBuildFile; fileRef = AFE532F51CC24D0BA85AF1C9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/filter_block.c */; };
+		CC8B2C8E53A54AD2A39AB0B5 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/snappy.c */ = {isa = PBXBuildFile; fileRef = 567DF4B938914DD4A7AD5B3C /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/snappy.c */; };
+		CE48D58379494FA9A9158236 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/crc32c.c */ = {isa = PBXBuildFile; fileRef = CA6D1CF786D744C7B90A9966 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/crc32c.c */; };
+		D7E358CFA3254A1F8A6173F7 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_writer.c */ = {isa = PBXBuildFile; fileRef = 9E956378DA5C4EDB819EDDB2 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_writer.c */; };
+		DC54393AEADF4FCF85C2E2F6 /* /Users/Shared/github/mako/sys/deps/lcdb/src/skiplist.c */ = {isa = PBXBuildFile; fileRef = 97812C84B7144525A920DEB9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/skiplist.c */; };
+		E8BBD76DDC9747589137EF21 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_impl.c */ = {isa = PBXBuildFile; fileRef = 20FF78DFA6BF45888919F056 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_impl.c */; };
+		EA62E470A5FC4516BF5926B5 /* /Users/Shared/github/mako/sys/deps/lcdb/src/filename.c */ = {isa = PBXBuildFile; fileRef = A99F86F0058445B98CFF95B3 /* /Users/Shared/github/mako/sys/deps/lcdb/src/filename.c */; };
+		EAE373FE26994B8C8DBF78DD /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/internal.c */ = {isa = PBXBuildFile; fileRef = A4A797BAA38C4CD18B481F42 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/internal.c */; };
+		EB74A8738C444118A555F8CD /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/format.c */ = {isa = PBXBuildFile; fileRef = 5E5906BE4C3B4AB7ACB44231 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/format.c */; };
+		F54BF428E102402985BA90E9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/c.c */ = {isa = PBXBuildFile; fileRef = 4475B79F827E4F209D4D51EF /* /Users/Shared/github/mako/sys/deps/lcdb/src/c.c */; };
+		F8C13F7FDA2B460EAC8A7DD9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table_builder.c */ = {isa = PBXBuildFile; fileRef = 3287EEE92CC24937B3FC8D7F /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table_builder.c */; };
+		FC57F7F089214708AF299029 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block_builder.c */ = {isa = PBXBuildFile; fileRef = 34544231626E4CA8AD5F9D80 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block_builder.c */; };
+		FCD2BB6498774ADF9356831C /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/env.c */ = {isa = PBXBuildFile; fileRef = 442049CABF0E437AA1329A68 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/env.c */; };
+		FE76B7C9BF644155B458772B /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_edit.c */ = {isa = PBXBuildFile; fileRef = A6FC024F25B24097B1745ED3 /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_edit.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1A280CF53F104A8FB181D067 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		3D71123D2DB043219D5E9291 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		970BDA832D224F9F8389504E /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		EF40D579164C42959CD358C8 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		2711F0FD0EC2432D8CC3E8D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 894FAB1C462A48CFA675B920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94D14074F9B814AB75BC388;
+			remoteInfo = ALL_BUILD;
+		};
+		55B1D64B2378485696C50E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 894FAB1C462A48CFA675B920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE4D80A8383EC3C490DDFC9;
+			remoteInfo = ZERO_CHECK;
+		};
+		9D6626B9F07743FA97C52293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 894FAB1C462A48CFA675B920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE4D80A8383EC3C490DDFC9;
+			remoteInfo = ZERO_CHECK;
+		};
+		AACDD73EDFC84A319C7506F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 894FAB1C462A48CFA675B920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 635A598B825103A864D0CE67;
+			remoteInfo = lcdb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04692AF5DDC94AE2B3428DAF /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/status.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = status.c; path = src/util/status.c; sourceTree = SOURCE_ROOT; };
+		0723BAFBB9714F5383A57D55 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_iter.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = db_iter.c; path = src/db_iter.c; sourceTree = SOURCE_ROOT; };
+		079EA1549AC044058093D759 /* /Users/Shared/github/mako/sys/deps/lcdb/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0C244E3A907A485D9792E3AC /* /Users/Shared/github/mako/sys/deps/lcdb/src/builder.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = builder.c; path = src/builder.c; sourceTree = SOURCE_ROOT; };
+		1D242926F732426686A4EC53 /* /Users/Shared/github/mako/sys/deps/lcdb/src/dbformat.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dbformat.c; path = src/dbformat.c; sourceTree = SOURCE_ROOT; };
+		1DB54ED9500E4BF1AC2F44B1 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/vector.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vector.c; path = src/util/vector.c; sourceTree = SOURCE_ROOT; };
+		1E12B52DC68447C08859D906 /* /Users/Shared/github/mako/sys/deps/lcdb/src/repair.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = repair.c; path = src/repair.c; sourceTree = SOURCE_ROOT; };
+		20FF78DFA6BF45888919F056 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_impl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = db_impl.c; path = src/db_impl.c; sourceTree = SOURCE_ROOT; };
+		24D78AEC9AEB43408F9F2AEF /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = table.c; path = src/table/table.c; sourceTree = SOURCE_ROOT; };
+		3287EEE92CC24937B3FC8D7F /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table_builder.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = table_builder.c; path = src/table/table_builder.c; sourceTree = SOURCE_ROOT; };
+		34544231626E4CA8AD5F9D80 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block_builder.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = block_builder.c; path = src/table/block_builder.c; sourceTree = SOURCE_ROOT; };
+		369E9CB277C14D3A82DCF8A5 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/options.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = options.c; path = src/util/options.c; sourceTree = SOURCE_ROOT; };
+		3BED3AC903C44C38BEA520AA /* /Users/Shared/github/mako/sys/deps/lcdb/src/write_batch.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = write_batch.c; path = src/write_batch.c; sourceTree = SOURCE_ROOT; };
+		442049CABF0E437AA1329A68 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/env.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = env.c; path = src/util/env.c; sourceTree = SOURCE_ROOT; };
+		4475B79F827E4F209D4D51EF /* /Users/Shared/github/mako/sys/deps/lcdb/src/c.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = c.c; path = src/c.c; sourceTree = SOURCE_ROOT; };
+		567DF4B938914DD4A7AD5B3C /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/snappy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = snappy.c; path = src/util/snappy.c; sourceTree = SOURCE_ROOT; };
+		58049D7809C044938AA31D60 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_reader.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = log_reader.c; path = src/log_reader.c; sourceTree = SOURCE_ROOT; };
+		5E5906BE4C3B4AB7ACB44231 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/format.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = format.c; path = src/table/format.c; sourceTree = SOURCE_ROOT; };
+		650C4D4EE80F4D4294FDE07C /* /Users/Shared/github/mako/sys/deps/lcdb/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		732CAA7407934986A2697532 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/random.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = random.c; path = src/util/random.c; sourceTree = SOURCE_ROOT; };
+		74DC76F3ECB6417A858C008B /* /Users/Shared/github/mako/sys/deps/lcdb/src/table_cache.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = table_cache.c; path = src/table_cache.c; sourceTree = SOURCE_ROOT; };
+		78D174FBA9CB4F638DB149A7 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/logger.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = logger.c; path = src/util/logger.c; sourceTree = SOURCE_ROOT; };
+		7906A6FD15494C38B8881F92 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/iterator.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = iterator.c; path = src/table/iterator.c; sourceTree = SOURCE_ROOT; };
+		793AF473A3074F82A3381327 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/rbt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = rbt.c; path = src/util/rbt.c; sourceTree = SOURCE_ROOT; };
+		7A487EF4441C437ABDBBEDF2 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/thread_pool.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = thread_pool.c; path = src/util/thread_pool.c; sourceTree = SOURCE_ROOT; };
+		7C5F46CC80D0424C84B994FB /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/array.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = array.c; path = src/util/array.c; sourceTree = SOURCE_ROOT; };
+		7D1AAC172A4B4BD5843AB238 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/hash.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hash.c; path = src/util/hash.c; sourceTree = SOURCE_ROOT; };
+		7DEFBA9CA59D406AA7E94D11 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/merger.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = merger.c; path = src/table/merger.c; sourceTree = SOURCE_ROOT; };
+		85B8AC16FFFA44D28DAE9198 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/comparator.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = comparator.c; path = src/util/comparator.c; sourceTree = SOURCE_ROOT; };
+		8C7492E281E74ECEA7844536 /* lcdb */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblcdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B704FF101A4AC9A26F0543 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/two_level_iterator.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = two_level_iterator.c; path = src/table/two_level_iterator.c; sourceTree = SOURCE_ROOT; };
+		97812C84B7144525A920DEB9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/skiplist.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = skiplist.c; path = src/skiplist.c; sourceTree = SOURCE_ROOT; };
+		9CCB94F6E9894BC5A3CC447D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = buffer.c; path = src/util/buffer.c; sourceTree = SOURCE_ROOT; };
+		9E956378DA5C4EDB819EDDB2 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_writer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = log_writer.c; path = src/log_writer.c; sourceTree = SOURCE_ROOT; };
+		A1D80798C40C4B1B948248BA /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/cache.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cache.c; path = src/util/cache.c; sourceTree = SOURCE_ROOT; };
+		A4A797BAA38C4CD18B481F42 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/internal.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = internal.c; path = src/util/internal.c; sourceTree = SOURCE_ROOT; };
+		A6FC024F25B24097B1745ED3 /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_edit.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = version_edit.c; path = src/version_edit.c; sourceTree = SOURCE_ROOT; };
+		A85FAAB8B3B643FC890CA991 /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_set.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = version_set.c; path = src/version_set.c; sourceTree = SOURCE_ROOT; };
+		A99F86F0058445B98CFF95B3 /* /Users/Shared/github/mako/sys/deps/lcdb/src/filename.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = filename.c; path = src/filename.c; sourceTree = SOURCE_ROOT; };
+		AB27D24634AE43CCA34B29B1 /* /Users/Shared/github/mako/sys/deps/lcdb/src/dumpfile.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dumpfile.c; path = src/dumpfile.c; sourceTree = SOURCE_ROOT; };
+		AFE532F51CC24D0BA85AF1C9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/filter_block.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = filter_block.c; path = src/table/filter_block.c; sourceTree = SOURCE_ROOT; };
+		B08A4C049BE34F03969D5DFE /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/slice.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = slice.c; path = src/util/slice.c; sourceTree = SOURCE_ROOT; };
+		B96992B8FB004DBCB4EB611F /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/strutil.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = strutil.c; path = src/util/strutil.c; sourceTree = SOURCE_ROOT; };
+		CA6D1CF786D744C7B90A9966 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/crc32c.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = crc32c.c; path = src/util/crc32c.c; sourceTree = SOURCE_ROOT; };
+		CD599CF6056F48AB86A31442 /* /Users/Shared/github/mako/sys/deps/lcdb/src/memtable.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = memtable.c; path = src/memtable.c; sourceTree = SOURCE_ROOT; };
+		D44EA23F1167427AB64DC96D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/arena.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = arena.c; path = src/util/arena.c; sourceTree = SOURCE_ROOT; };
+		DE93D481A0034BECA9029CD9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/atomic.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = atomic.c; path = src/util/atomic.c; sourceTree = SOURCE_ROOT; };
+		EF428B8A1AED47ED97F65113 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/bloom.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bloom.c; path = src/util/bloom.c; sourceTree = SOURCE_ROOT; };
+		F1A2D2170C9642AD8FF480F7 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = block.c; path = src/table/block.c; sourceTree = SOURCE_ROOT; };
+		FF90AF252720466EA76DA6AF /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/port.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = port.c; path = src/util/port.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBEC519E976B40B29122CD5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		495A48C6A26B426FA9FF8233 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				A17356E5B6524ED3AAD511C1 /* CMake Rules */,
+				650C4D4EE80F4D4294FDE07C /* /Users/Shared/github/mako/sys/deps/lcdb/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		5569FF036A3940548EC49C9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C7492E281E74ECEA7844536 /* lcdb */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A17356E5B6524ED3AAD511C1 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		E5795C8CC0864D358D70CCA2 /* lcdb */ = {
+			isa = PBXGroup;
+			children = (
+				F6D30E7764D04848A980CEB2 /* Source Files */,
+				079EA1549AC044058093D759 /* /Users/Shared/github/mako/sys/deps/lcdb/CMakeLists.txt */,
+			);
+			name = lcdb;
+			sourceTree = "<group>";
+		};
+		F0ACFD2537F54B9187E2C07F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6D30E7764D04848A980CEB2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C244E3A907A485D9792E3AC /* /Users/Shared/github/mako/sys/deps/lcdb/src/builder.c */,
+				4475B79F827E4F209D4D51EF /* /Users/Shared/github/mako/sys/deps/lcdb/src/c.c */,
+				20FF78DFA6BF45888919F056 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_impl.c */,
+				0723BAFBB9714F5383A57D55 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_iter.c */,
+				1D242926F732426686A4EC53 /* /Users/Shared/github/mako/sys/deps/lcdb/src/dbformat.c */,
+				AB27D24634AE43CCA34B29B1 /* /Users/Shared/github/mako/sys/deps/lcdb/src/dumpfile.c */,
+				A99F86F0058445B98CFF95B3 /* /Users/Shared/github/mako/sys/deps/lcdb/src/filename.c */,
+				58049D7809C044938AA31D60 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_reader.c */,
+				9E956378DA5C4EDB819EDDB2 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_writer.c */,
+				CD599CF6056F48AB86A31442 /* /Users/Shared/github/mako/sys/deps/lcdb/src/memtable.c */,
+				1E12B52DC68447C08859D906 /* /Users/Shared/github/mako/sys/deps/lcdb/src/repair.c */,
+				97812C84B7144525A920DEB9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/skiplist.c */,
+				F1A2D2170C9642AD8FF480F7 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block.c */,
+				34544231626E4CA8AD5F9D80 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block_builder.c */,
+				AFE532F51CC24D0BA85AF1C9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/filter_block.c */,
+				5E5906BE4C3B4AB7ACB44231 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/format.c */,
+				7906A6FD15494C38B8881F92 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/iterator.c */,
+				7DEFBA9CA59D406AA7E94D11 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/merger.c */,
+				24D78AEC9AEB43408F9F2AEF /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table.c */,
+				3287EEE92CC24937B3FC8D7F /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table_builder.c */,
+				91B704FF101A4AC9A26F0543 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/two_level_iterator.c */,
+				74DC76F3ECB6417A858C008B /* /Users/Shared/github/mako/sys/deps/lcdb/src/table_cache.c */,
+				D44EA23F1167427AB64DC96D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/arena.c */,
+				7C5F46CC80D0424C84B994FB /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/array.c */,
+				DE93D481A0034BECA9029CD9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/atomic.c */,
+				EF428B8A1AED47ED97F65113 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/bloom.c */,
+				9CCB94F6E9894BC5A3CC447D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/buffer.c */,
+				A1D80798C40C4B1B948248BA /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/cache.c */,
+				85B8AC16FFFA44D28DAE9198 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/comparator.c */,
+				CA6D1CF786D744C7B90A9966 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/crc32c.c */,
+				442049CABF0E437AA1329A68 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/env.c */,
+				7D1AAC172A4B4BD5843AB238 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/hash.c */,
+				A4A797BAA38C4CD18B481F42 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/internal.c */,
+				78D174FBA9CB4F638DB149A7 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/logger.c */,
+				369E9CB277C14D3A82DCF8A5 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/options.c */,
+				FF90AF252720466EA76DA6AF /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/port.c */,
+				732CAA7407934986A2697532 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/random.c */,
+				793AF473A3074F82A3381327 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/rbt.c */,
+				B08A4C049BE34F03969D5DFE /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/slice.c */,
+				567DF4B938914DD4A7AD5B3C /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/snappy.c */,
+				04692AF5DDC94AE2B3428DAF /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/status.c */,
+				B96992B8FB004DBCB4EB611F /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/strutil.c */,
+				7A487EF4441C437ABDBBEDF2 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/thread_pool.c */,
+				1DB54ED9500E4BF1AC2F44B1 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/vector.c */,
+				A6FC024F25B24097B1745ED3 /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_edit.c */,
+				A85FAAB8B3B643FC890CA991 /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_set.c */,
+				3BED3AC903C44C38BEA520AA /* /Users/Shared/github/mako/sys/deps/lcdb/src/write_batch.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F8555BFD22AA4B54BD2A3570 = {
+			isa = PBXGroup;
+			children = (
+				495A48C6A26B426FA9FF8233 /* ALL_BUILD */,
+				E5795C8CC0864D358D70CCA2 /* lcdb */,
+				5569FF036A3940548EC49C9A /* Products */,
+				F0ACFD2537F54B9187E2C07F /* Frameworks */,
+				FF9F65D6AB664D7DA733EF40 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		FF9F65D6AB664D7DA733EF40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		635A598B825103A864D0CE67 /* lcdb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9580AA58728046F4BA1FFC12 /* Build configuration list for PBXNativeTarget "lcdb" */;
+			buildPhases = (
+				4A783689EF32487BB24DE374 /* Sources */,
+				CBEC519E976B40B29122CD5D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89E8BC531A984D229ADADE35 /* PBXTargetDependency */,
+			);
+			name = lcdb;
+			productName = lcdb;
+			productReference = 8C7492E281E74ECEA7844536 /* lcdb */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		894FAB1C462A48CFA675B920 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2660;
+			};
+			buildConfigurationList = 66E1180465CE4313BF877C25 /* Build configuration list for PBXProject "lcdb" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				EF40D579164C42959CD358C8 /* Debug */,
+				1A280CF53F104A8FB181D067 /* Release */,
+				970BDA832D224F9F8389504E /* MinSizeRel */,
+				3D71123D2DB043219D5E9291 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = F8555BFD22AA4B54BD2A3570;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				A94D14074F9B814AB75BC388 /* ALL_BUILD */,
+				1B6173242395E4FC5BE91492 /* install */,
+				635A598B825103A864D0CE67 /* lcdb */,
+				4FC4B168B5D689D1D1D87E75 /* RUN_TESTS */,
+				3EE4D80A8383EC3C490DDFC9 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  /opt/homebrew/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  /opt/homebrew/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  /opt/homebrew/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  /opt/homebrew/bin/ctest -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		0F6BFEC2C2547762AF25D1ED /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/Shared/github/mako/sys/deps/lcdb/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  make -f /Users/Shared/github/mako/sys/deps/lcdb/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  make -f /Users/Shared/github/mako/sys/deps/lcdb/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  make -f /Users/Shared/github/mako/sys/deps/lcdb/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  make -f /Users/Shared/github/mako/sys/deps/lcdb/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		15AEEAD4DA6CE0B4D6752141 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/Shared/github/mako/sys/deps/lcdb/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/Shared/github/mako/sys/deps/lcdb
+  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A783689EF32487BB24DE374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BF43538DBB40FEA1524A8C /* /Users/Shared/github/mako/sys/deps/lcdb/src/builder.c */,
+				F54BF428E102402985BA90E9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/c.c */,
+				E8BBD76DDC9747589137EF21 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_impl.c */,
+				04EBF12A582F442BA9E710C3 /* /Users/Shared/github/mako/sys/deps/lcdb/src/db_iter.c */,
+				BBCE22FAC6F143FCAC50936D /* /Users/Shared/github/mako/sys/deps/lcdb/src/dbformat.c */,
+				2708EABB878945419E7A9044 /* /Users/Shared/github/mako/sys/deps/lcdb/src/dumpfile.c */,
+				EA62E470A5FC4516BF5926B5 /* /Users/Shared/github/mako/sys/deps/lcdb/src/filename.c */,
+				A7DFA2E80ED344B38180B232 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_reader.c */,
+				D7E358CFA3254A1F8A6173F7 /* /Users/Shared/github/mako/sys/deps/lcdb/src/log_writer.c */,
+				6DF900341FA145FEB0364155 /* /Users/Shared/github/mako/sys/deps/lcdb/src/memtable.c */,
+				AECC649857FE491AB09E03EC /* /Users/Shared/github/mako/sys/deps/lcdb/src/repair.c */,
+				DC54393AEADF4FCF85C2E2F6 /* /Users/Shared/github/mako/sys/deps/lcdb/src/skiplist.c */,
+				10152029DBA242D1B41B280D /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block.c */,
+				FC57F7F089214708AF299029 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/block_builder.c */,
+				C33C1520D452420980BE0387 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/filter_block.c */,
+				EB74A8738C444118A555F8CD /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/format.c */,
+				1F9C1262B64F4D9893E671C8 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/iterator.c */,
+				4DB9941DA8E4493A88C36535 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/merger.c */,
+				017542A2FE6740149411B3EC /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table.c */,
+				F8C13F7FDA2B460EAC8A7DD9 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/table_builder.c */,
+				9469E70175564A8DB643B753 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table/two_level_iterator.c */,
+				3589729871704BEBBF369C99 /* /Users/Shared/github/mako/sys/deps/lcdb/src/table_cache.c */,
+				1F03934E3A35495DB4CF93DA /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/arena.c */,
+				9513B0330AC04B89AED98D5D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/array.c */,
+				ABF9F15025264D6789A24B11 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/atomic.c */,
+				1D3B63F1D87C4B6FA846B050 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/bloom.c */,
+				7A18DCAF9C8F4234BB71929F /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/buffer.c */,
+				A88FFCA83A3D40A58F73B179 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/cache.c */,
+				3EDA2ECECE514506B8415302 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/comparator.c */,
+				CE48D58379494FA9A9158236 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/crc32c.c */,
+				FCD2BB6498774ADF9356831C /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/env.c */,
+				6C45861FBA534D988267B031 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/hash.c */,
+				EAE373FE26994B8C8DBF78DD /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/internal.c */,
+				97E4999C0EB24D33811E1A5D /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/logger.c */,
+				49B1EFD7864A4BF5B37BB7D8 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/options.c */,
+				24B5E3A22E72469CA3CD4B32 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/port.c */,
+				9925133AC6B142E88E63A183 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/random.c */,
+				2C8F250D2FF7494AAC040159 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/rbt.c */,
+				AFC01CA94D804E26A0672311 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/slice.c */,
+				CC8B2C8E53A54AD2A39AB0B5 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/snappy.c */,
+				A25B515F994D4218ACD0F052 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/status.c */,
+				5C870CB9C6E846C18287A717 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/strutil.c */,
+				8A3DF1CF57F3429392B25881 /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/thread_pool.c */,
+				2EEC0A219BAC4CAAA87F8E2A /* /Users/Shared/github/mako/sys/deps/lcdb/src/util/vector.c */,
+				FE76B7C9BF644155B458772B /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_edit.c */,
+				21144FA76C0A4171A9F609FF /* /Users/Shared/github/mako/sys/deps/lcdb/src/version_set.c */,
+				11F8DF6A59814AEA9ED8EE50 /* /Users/Shared/github/mako/sys/deps/lcdb/src/write_batch.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89E8BC531A984D229ADADE35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE4D80A8383EC3C490DDFC9 /* ZERO_CHECK */;
+			targetProxy = 9D6626B9F07743FA97C52293 /* PBXContainerItemProxy */;
+		};
+		ADDEC60185A4439DB3FCC7AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94D14074F9B814AB75BC388 /* ALL_BUILD */;
+			targetProxy = 2711F0FD0EC2432D8CC3E8D4 /* PBXContainerItemProxy */;
+		};
+		D674DC485C4044A0AA17A8FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE4D80A8383EC3C490DDFC9 /* ZERO_CHECK */;
+			targetProxy = 55B1D64B2378485696C50E68 /* PBXContainerItemProxy */;
+		};
+		F7AF06A4C4E14F31B8D22D25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 635A598B825103A864D0CE67 /* lcdb */;
+			targetProxy = AACDD73EDFC84A319C7506F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07F2030BA9FA4B33B5D7824B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0F74C278C8FA4FC789C6886D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		1A88F1B2198445A4871750A6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1FBB06979B9A457C8B1D9264 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2ACDB092727A47CFB57572C0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/Shared/github/mako/sys/build;
+			};
+			name = MinSizeRel;
+		};
+		2F38E66932014EDD916EC0B1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/Shared/github/mako/sys/deps/lcdb/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",LDB_PTHREAD,LDB_HAVE_PREAD,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/Shared/github/mako/sys/deps/lcdb/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("       -DNDEBUG -fvisibility=hidden -pedantic -Wall -Wextra -Wcast-align -Wconditional-uninitialized -Wmissing-prototypes -Wno-implicit-fallthrough -Wno-long-long -Wno-overlength-strings -Wshadow -Wstrict-prototypes -Wundef ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = lcdb;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/Shared/github/mako/sys/build/lcdb.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		42EDF657149E4E8AB01EE5A6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/Shared/github/mako/sys/build;
+			};
+			name = RelWithDebInfo;
+		};
+		60C4DA5DAD294D638A3452B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6218A419F1B94ACDB994B2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6393DF5A7EC74518A27AE729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/Shared/github/mako/sys/deps/lcdb/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",LDB_PTHREAD,LDB_HAVE_PREAD,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/Shared/github/mako/sys/deps/lcdb/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -fvisibility=hidden -pedantic -Wall -Wextra -Wcast-align -Wconditional-uninitialized -Wmissing-prototypes -Wno-implicit-fallthrough -Wno-long-long -Wno-overlength-strings -Wshadow -Wstrict-prototypes -Wundef ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = lcdb;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/Shared/github/mako/sys/build/lcdb.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		74D56590C09F432DBDDD48F5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AD4FD0BF98D24ADAAC517D7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B6B4C000D7AC4894B216D3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/Shared/github/mako/sys/build;
+			};
+			name = Release;
+		};
+		BA8F7BACA97E42E18667A8E2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C2747A4D9B3641EDB1D86ABF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/Shared/github/mako/sys/deps/lcdb/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",LDB_PTHREAD,LDB_HAVE_PREAD,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/Shared/github/mako/sys/deps/lcdb/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG -fvisibility=hidden -pedantic -Wall -Wextra -Wcast-align -Wconditional-uninitialized -Wmissing-prototypes -Wno-implicit-fallthrough -Wno-long-long -Wno-overlength-strings -Wshadow -Wstrict-prototypes -Wundef ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = lcdb;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/Shared/github/mako/sys/build/lcdb.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C870C0B735E04E61B31510BF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D1F2A824C02B467CA74F3564 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D2DEEDDB4DEC4DB898A24AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/Shared/github/mako/sys/deps/lcdb/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",LDB_PTHREAD,LDB_DEBUG,LDB_HAVE_PREAD,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/Shared/github/mako/sys/deps/lcdb/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   -fvisibility=hidden -pedantic -Wall -Wextra -Wcast-align -Wconditional-uninitialized -Wmissing-prototypes -Wno-implicit-fallthrough -Wno-long-long -Wno-overlength-strings -Wshadow -Wstrict-prototypes -Wundef ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = lcdb;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/Shared/github/mako/sys/build/lcdb.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DCBD7B16F4B14530A101C262 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DCFEA49E7E3F4224BA372C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F4E96443B73A4773922BCEB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F6B9124E3DEC4B8E877EDC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = "";
+				SYMROOT = /Users/Shared/github/mako/sys/build;
+			};
+			name = Debug;
+		};
+		FE7736B5D18E4EC2A0381196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		FF84997D64C94FE689FF48A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66E1180465CE4313BF877C25 /* Build configuration list for PBXProject "lcdb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B9124E3DEC4B8E877EDC30 /* Debug */,
+				B6B4C000D7AC4894B216D3CC /* Release */,
+				2ACDB092727A47CFB57572C0 /* MinSizeRel */,
+				42EDF657149E4E8AB01EE5A6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8E8B8A5B2AEE40C88F78D098 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F74C278C8FA4FC789C6886D /* Debug */,
+				AD4FD0BF98D24ADAAC517D7C /* Release */,
+				C870C0B735E04E61B31510BF /* MinSizeRel */,
+				74D56590C09F432DBDDD48F5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9580AA58728046F4BA1FFC12 /* Build configuration list for PBXNativeTarget "lcdb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DEEDDB4DEC4DB898A24AB5 /* Debug */,
+				6393DF5A7EC74518A27AE729 /* Release */,
+				C2747A4D9B3641EDB1D86ABF /* MinSizeRel */,
+				2F38E66932014EDD916EC0B1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BC14D89A17204EE1A2AD7A7D /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFEA49E7E3F4224BA372C58 /* Debug */,
+				FE7736B5D18E4EC2A0381196 /* Release */,
+				BA8F7BACA97E42E18667A8E2 /* MinSizeRel */,
+				07F2030BA9FA4B33B5D7824B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DA7A28C17B1A4EFDB415A97E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E96443B73A4773922BCEB6 /* Debug */,
+				60C4DA5DAD294D638A3452B9 /* Release */,
+				DCBD7B16F4B14530A101C262 /* MinSizeRel */,
+				1A88F1B2198445A4871750A6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EED48D2C817E450AB70C7446 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF84997D64C94FE689FF48A0 /* Debug */,
+				6218A419F1B94ACDB994B2C5 /* Release */,
+				D1F2A824C02B467CA74F3564 /* MinSizeRel */,
+				1FBB06979B9A457C8B1D9264 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 894FAB1C462A48CFA675B920 /* Project object */;
+}

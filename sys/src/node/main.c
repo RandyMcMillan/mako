@@ -65,7 +65,7 @@ static const char *node_args[] = {
   "-rpcuser=",
   "-testnet",
   "-upnp=",
-  "-version"
+  "-version",
   "--help"
 };
 
@@ -194,6 +194,7 @@ btc_main(const btc_conf_t *conf) {
 
   if (conf->help) {
     puts("Usage: makod [options]");
+    puts("  -?, -h, --help   Show this help message");
     return 1;
   }
 

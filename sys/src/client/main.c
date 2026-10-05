@@ -212,6 +212,7 @@ btc_main(const btc_conf_t *conf) {
 
   if (conf->help) {
     puts("Usage: mako [options] <command> [params]");
+    puts("  -?, -h, --help   Show this help message");
     return 1;
   }
 
