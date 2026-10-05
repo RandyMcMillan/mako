@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2024"
 build = "build.rs"
 
+[[bin]]
+name = "mako-rs"
+path = "src/main.rs"
+
 [dependencies]
 
 [build-dependencies]
