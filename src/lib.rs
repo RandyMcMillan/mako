@@ -1,14 +1,12 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+//! Rust FFI bindings for the C implementation in `sys/`.
+//!
+//! The crate exposes the raw C ABI plus a few thin wrappers around the most
+//! commonly used handle types.
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub mod client;
+pub mod ffi;
+pub mod logger;
+pub mod network;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use client::Client;
+pub use logger::Logger;
