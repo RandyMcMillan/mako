@@ -77,8 +77,17 @@ fn print_networks() {
 }
 
 unsafe fn run_node(args: &[String]) -> Result<(), u8> {
-    let mut argv_c = Vec::with_capacity(args.len());
-    for arg in args {
+    let default_chain = !args
+        .iter()
+        .skip(1)
+        .any(|arg| arg == "-testnet" || arg.starts_with("-chain="));
+
+    let mut argv_c = Vec::with_capacity(args.len() + 1);
+    argv_c.push(CString::new(args[0].as_str()).map_err(|_| 2u8)?);
+    if default_chain {
+        argv_c.push(CString::new("-chain=regtest").map_err(|_| 2u8)?);
+    }
+    for arg in args.iter().skip(1) {
         argv_c.push(CString::new(arg.as_str()).map_err(|_| 2u8)?);
     }
 
@@ -89,7 +98,7 @@ unsafe fn run_node(args: &[String]) -> Result<(), u8> {
 
     const PATH_MAX: usize = 1024;
 
-    let prefix = {
+    let prefix = if args.iter().any(|arg| arg.starts_with("-datadir=")) {
         let mut buf = [0i8; PATH_MAX];
         let datadir = CString::new("mako").map_err(|_| 2u8)?;
 
@@ -103,6 +112,20 @@ unsafe fn run_node(args: &[String]) -> Result<(), u8> {
             return Err(1);
         }
 
+        buf
+    } else {
+        let cwd = env::current_dir().map_err(|_| 1u8)?;
+        let path = cwd.join(".mako-rs");
+        let path = CString::new(path.to_string_lossy().as_bytes()).map_err(|_| 1u8)?;
+        let mut buf = [0i8; PATH_MAX];
+        let bytes = path.as_bytes_with_nul();
+        if bytes.len() > buf.len() {
+            eprintln!("Path for datadir is too long!");
+            return Err(1);
+        }
+        for (dst, src) in buf.iter_mut().zip(bytes.iter().copied()) {
+            *dst = src as i8;
+        }
         buf
     };
 
